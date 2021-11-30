@@ -1,0 +1,172 @@
+:root{
+    --background: #0f0e17;/*card headline*/
+    --headline: #fffffe;
+    --paragraph: #a7a9be;
+    --button: #ff8906;/*card tag background*/
+    --button-text: #fffffe;/*card tag text*/
+
+    --paragraph2: #2e2f3e;
+    --stroke: black;
+    --main: #fffffe;/*card background*/
+    --highlight: #ff8906;
+    --secondary: #f25f4c;
+    --tertiary: #e53170;/*card highlight*/
+}
+/*------------------Global*/
+body{
+    background-color: var(--background);
+    font-family: proxima-nova, sans-serif;
+    font-size: 1em;
+    line-height: 1.6em;
+}
+h1, h2, h3, h4{
+    color: var(--headline);
+}
+h1{
+    font-size: 1.8rem;
+}
+p{
+    color: var(--paragraph);
+}
+a{
+    text-decoration: none;
+}
+span{
+    color: var(--highlight);
+}
+
+
+
+.invert h1, h2, h3, h4{
+    color: var(--background)
+}
+.invert p{
+    color: var(--paragraph2)
+}
+
+/*------------------Website*/
+
+
+.main{
+    /*background-image: linear-gradient(var(--button) -10%,var(--background));*/
+    margin: 0;
+    padding: 0;
+}
+
+
+.head{
+    padding: 1em;
+    background-color: black;
+    margin-bottom: 3em;
+    width: 90%;
+}
+.menuButton{
+    color: var(--button-text);
+    border: 3px solid var(--stroke);
+    margin-right: 1rem;
+    width: 95px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menuButton:hover{
+    background-color: var(--button);
+}
+
+
+/*----------------Intro*/
+
+.intro{
+    height: 450px;
+    color: var(--background);
+    background-color: var(--background);
+    margin-bottom: 2rem;
+
+}
+
+.introImg{
+    width: 100%;
+    max-height: 450px;
+}
+
+/*---------------overview*/
+
+.overview{
+    height: 300px;
+    width: 80%;
+    border-radius: 10px;
+    border: 3px solid black;
+    background-color: var(--headline);
+    padding: 1em;
+}
+
+.overviewImg{
+    position: relative;
+    top:-130px;
+    height: 240px;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: 1em;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ4JktxyToLv2hyU0R1rwHYzAefkEe8FD0AQ&usqp=CAU") no-repeat center center / cover;
+}
+
+.icon{
+    font-size: 3.5rem;
+    margin-right: 10px;
+}
+
+/*------------- About Me*/
+
+.aboutMe{
+    height: 1000px;
+    width: 80%;
+    border-radius: 15px;
+    border: 3px solid black;
+    background-color: var(--headline);
+    padding: 0em;
+}
+
+.aboutMeMenu{
+    padding-top: 0px;
+    width: 100%;
+
+}
+
+.aboutButton{
+    background-color: var(--background);
+    color: var(--headline);
+    font-size: 1.1rem;
+    width: 20%;
+    height: 60px;
+    border: 2px solid var(--headline);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.2s;
+    cursor: pointer;
+
+}
+.aboutButton:hover{
+    background-color: var(--button);
+}
+.active{background-color: var(--button)}
+.fb{
+    border-top-left-radius: 10px;
+}
+.lb{
+    border-top-right-radius: 10px;
+}
+
+/**/
+
+.aboutMeContent1{
+    width: 90%;
+    padding: 1em;
+}
+
+.aboutImg{
+    width: 100%;
+    max-height: 450px;
+    border-radius: 10px
+}
