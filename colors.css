@@ -1,0 +1,51 @@
+:root{
+    --stroke: black;
+    --background: #0f0e17;/*card headline*/
+    --paragraph2: #2e2f3e;
+
+    --button: #ff8906;/*card tag background*/
+    --secondary: #f25f4c;
+    --tertiary: #e53170;/*card highlight*/
+    --paragraph: rgb(167, 169, 190);
+    --main: #fffffe;/*card background, but txt , headline*/
+}
+
+/*global colors*/
+p{
+    color: var(--paragraph);
+}
+h1, h2, h3, h4{
+    color: var(--main);
+}
+
+/*invest colors*/
+.invert p{
+    color: var(--paragraph2)
+}
+.invert h1,.invert h2,.invert h3,.invert h4{
+    color: var(--background)
+}
+
+/*Dark card*/
+.dc{
+    background-color: var(--background);
+}
+.dc p{
+    color: var(--paragraph);
+}
+.dc h1,.dc h2,.dc h3,.dc h4{
+    color: var(--main)
+}
+
+/*Light card*/
+.lc{
+    background-color: var(--main);
+}
+.lc p{
+    color: var(--paragraph);
+}
+.lc h1,.lc h2,.lc h3,.lc h4{
+    color: var(--background);
+}
+
+
