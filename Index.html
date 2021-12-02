@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<!--    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>-->
     <link rel="stylesheet" href="colors.css">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
@@ -19,23 +19,13 @@
 
     <div class="container-fluid row d-flex flex-column align-items-center main">
 
-        <div class="head d-flex justify-content-between align-items-center">
-            <h1>Portfolio</h1>
-            <div class=" d-flex justify-content-around">
-                <a href="#"><div class="menuButton">Top</div></a>
-                <a href="#"><div class="menuButton">Intro</div></a>
-                <a href="#"><div class="menuButton">Overview</div></a>
-                <a href="#"><div class="menuButton">About me</div></a>
-            </div>
-        </div>
-
         <div class="row intro d-flex justify-content-center align-items-center">
             <div class="col-4">
                 <h1><span>Hello, I'm </span>
                 <br>Person who makes websites</h1>
                 <p>Proffesional web developer</p>
             </div>
-            <div class="col-7">
+            <div class="col-7 mt-3 ">
                 <img src="picture.svg" class="introImg">
             </div>
         </div>
@@ -74,7 +64,7 @@
         </div>
 
         <div class="aboutMe d-flex flex-column align-items-center">
-            <div class="aboutMeMenu d-flex w-100">
+            <div class="aboutMeMenu lc d-flex w-100">
                 <div class="aboutButton active fb">About</div>
                 <div class="aboutButton">Resume</div>
                 <div class="aboutButton">Work</div>
@@ -116,23 +106,23 @@
 
                 <div class="invert d-flex align-items-center justify-content-center m-5 "><h1>Our trusted clients</h1></div>
 
-                <div class="row w-100 justify-content-center gap-2 p-3">
-                    <div class="col card">
+                <div class="d-flex flex-wrap w-100 justify-content-center gap-3 p-3">
+                    <div class="card">
                         <img src="https://inbio-react.netlify.app/static/315fa9d000ebf4a2995d16d13b17852e/e94a9/client1.webp" alt="asd">
                         <p class="border-top">Martha Smiths</p>
                     </div>
 
-                    <div class="col card">
+                    <div class="card">
                         <img src="https://inbio-react.netlify.app/static/315fa9d000ebf4a2995d16d13b17852e/e94a9/client1.webp" alt="asd">
                         <p class="border-top">Martha Smiths</p>
                     </div>
 
-                    <div class="col card">
+                    <div class="card">
                         <img src="https://inbio-react.netlify.app/static/315fa9d000ebf4a2995d16d13b17852e/e94a9/client1.webp" alt="asd">
                         <p class="border-top">Martha Smiths</p>
                     </div>
 
-                    <div class="col card">
+                    <div class="card">
                         <img src="https://inbio-react.netlify.app/static/315fa9d000ebf4a2995d16d13b17852e/e94a9/client1.webp" alt="asd">
                         <p class="border-top">Martha Smiths</p>
                     </div>
@@ -310,7 +300,7 @@
                     </div>
                 </div>
             </div>
-            <div class="about d-flex flex-wrap blog m-3">
+            <div class="about blog flex-wrap m-3">
                 <div class="col dc blogCard">
                     <div class="row align-items-center justify-content-center">
                         <img class="blogImg" src="https://inbio-react.netlify.app/static/953f09919eb224ffd8d5ada9ac38150b/d0f18/blog-big-01.webp">
@@ -373,13 +363,67 @@
                 </div>
             </div>
             <div class="about contact m-3">
-                LOLOL
+
+                <div class="row gap-3">
+                    <div class="col-5 dc contactInfo">
+                        <div class="row">
+                            <div class="mb-3">
+                                <img class="contactImg" src="https://inbio-react.netlify.app/static/5930a183f9be0c913e9d25b1318416f9/3a710/contact1.webp">
+                            </div>
+                            <div class="row">
+                                <h1>Nevine Acotanza</h1>
+                                <p>Chief Operating Officer</p>
+                                <p>I am available for freelance work. Connect with me via and call in to my account.</p>
+                                <p>Phone: <h5>+01234567890</h5></p>
+                                <p>Email: <h5>admin@example.com</h5></p>
+                                <p>FIND WITH ME</p>
+                            </div>
+                            <div class="d-flex">
+                                <i class="fab iconLight fa-facebook-square"></i>
+                                <i class="fab iconLight fa-instagram-square"></i>
+                                <i class="fab iconLight fa-twitter-square"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col dc form p-4">
+                        <div class="row">
+                            <div class="col">
+                                <p>YOUR NAME</p>
+                                <input type="text" class="topInput nameInput">
+                            </div>
+                            <div class="col">
+                                <p>PHONE NUMBER</p>
+                                <input type="number" class="topInput numberInput">
+                            </div>
+                        </div>
+                        <div class="row mt-2 p-2">
+                            <p>EMAIL</p>
+                            <input type="text" class="topInput emailInput">
+                        </div>
+                        <div class="row p-2">
+                            <p>SUBJECT</p>
+                            <input type="text" class="topInputInput">
+                        </div>
+                        <div class="row p-2">
+                            <p>MESSAGE</p>
+                            <textarea id="w3review" name="w3review" rows="6" cols="40"></textarea>
+                        </div>
+                        <div class="messageButton">Send Message</div>
+
+
+                    </div>
+
+                </div>
+
             </div>
-
-
 
         </div>
 
+        <div class="footer d-flex flex-column justify-content-center align-items-center">
+            <button class="themeButton">Change theme</button>
+            <p>© 2021.All rights reserved by Rimvio-Themes.</p>
+        </div>
 
     </div>
 

@@ -12,37 +12,10 @@ h1{
 span{
     color: var(--button);
 }
-
-
-
 a{
     text-decoration: none;
 }
-/*------------------Website*/
-.main{
-    /*background-image: linear-gradient(var(--button) -10%,var(--background));*/
-    margin: 0;
-    padding: 0;
-}
-.head{
-    padding: 1em 5em;
-    background-color: black;
-    margin-bottom: 3em;
-    width: 100%;
-}
-.menuButton{
-    color: var(--main);
-    border: 3px solid var(--stroke);
-    margin-right: 1rem;
-    width: 95px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.menuButton:hover{
-    background-color: var(--button);
-}
+
 /*----------------Intro*/
 .intro{
     height: 450px;
@@ -85,15 +58,17 @@ a{
 /*------------- About Me*/
 .aboutMe{
     width: 80%;
-    border-radius: 15px;
+
     border: 3px solid black;
     background-color: var(--main);
-    padding: 0em;
+    padding: 0px;
+    border-radius: 10px;
 }
 
 .aboutMeMenu{
     padding-top: 0px;
     width: 100%;
+    background-color: var(--background);
 
 }
 .aboutButton{
@@ -132,7 +107,7 @@ a{
     border: 2px solid var(--stroke)
 }
 .cvButton{
-    width: 40%;
+    width: 45%;
     height: 70px;
     margin-top: 1em;
     border: 2px solid var(--stroke);
@@ -170,12 +145,14 @@ a{
     background-image: linear-gradient(var(--stroke) ,var(--background) 80%);
     box-shadow: -6px -6px 15px 0px var(--paragraph), 6px 6px 15px 0px var(--stroke);
     height: 320px;
-    box-sizing: border-box;
     border-radius: 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0px;
+    padding: 1em;
+}
+.card img{
+   
 }
 .card-bottom{
     height: 50px;
@@ -214,7 +191,7 @@ a{
 }
 
 /*Work*/
-.work{display: block;}
+.work{display: none;}
 .workCard{
     height: 400px;
     border-radius: 10px;
@@ -225,7 +202,7 @@ a{
     max-width: 250px;
     border-radius: 20px;
     margin-bottom: 1.5rem;
-    box-shadow: -2px -2px 5px 0px var(--paragraph), 2px 2px 8px 0px var(--stroke);
+
 }
 .workIcon{
     margin-top: 5px;
@@ -233,6 +210,7 @@ a{
 }
 
 /*Blog*/
+.blog{display: none}
 .blogCard{
     height: 420px;
     max-width: 300px;
@@ -248,4 +226,66 @@ a{
     border-radius: 20px;
     margin-bottom: 1.5rem;
     /*box-shadow: -1px -1px 0px 0px var(--paragraph), 2px 2px 0px 0px var(--stroke);*/
+}
+
+/*Contact*/
+.contact{display: block}
+.contactInfo{
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: -6px -6px 15px 0px var(--paragraph), 6px 6px 15px 0px var(--stroke);
+}
+.contactImg{
+    width: 100%;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.iconLight{
+    padding: 1rem;
+    background-color: var(--background);
+    border-radius: 5px;
+    box-shadow: -2px -2px 5px 0px rgba(167, 169, 190, 0.37), 6px 6px 15px 0px var(--stroke);
+    color: var(--main);
+    margin-right: 1rem;
+}
+
+.form{
+    border-radius: 5px;
+    box-shadow: -6px -6px 15px 0px var(--paragraph), 6px 6px 15px 0px var(--stroke);
+}
+
+.topInput{
+    background-color: var(--main);
+    border-radius: 5px;
+}
+.topInput:focus{
+    outline: 1px solid var(--button)
+}
+
+.messageButton{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    width: 46%;
+    padding: 2rem;
+    color: var(--main);
+    background-color: var(--tertiary);
+    opacity: 0.85;
+    border: 1px solid var(--stroke);
+    cursor: pointer;
+
+}
+.messageButton:hover{
+    opacity: 1;
+}
+/*-----------------footer*/
+
+.footer{
+    height: 400px;
+}
+
+.themeButton{
+    margin-bottom: 1em;
+    padding: 1rem;
 }
